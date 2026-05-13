@@ -1,0 +1,105 @@
+{
+    "trading_mode": "futures",
+    "margin_mode": "isolated",
+    "max_open_trades": 5,
+    "stake_currency": "USDT",
+    "stake_amount": 500,
+    "tradable_balance_ratio": 0.99,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "dry_run_wallet": 10000,
+    "cancel_open_orders_on_exit": true,
+    "timeframe": "5m",
+    "exchange": {
+        "name": "bybit",
+        "key": "YOUR_API_KEY_HERE",
+        "secret": "YOUR_API_SECRET_HERE",
+        "ccxt_sync_config": {
+            "enableRateLimit": true,
+            "httpsProxy": "http://127.0.0.1:7890"
+        },
+        "ccxt_async_config": {
+            "enableRateLimit": true,
+            "httpsProxy": "http://127.0.0.1:7890"
+        },
+        "pair_whitelist": [
+            "BTC/USDT:USDT"
+        ],
+        "pair_blacklist": []
+    },
+    "entry_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1,
+        "price_last_balance": 0.0,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "other",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "order_types": {
+        "entry": "limit",
+        "exit": "limit",
+        "emergency_exit": "market",
+        "force_entry": "market",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": true,
+        "stoploss_on_exchange_interval": 60
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        }
+    ],
+    "bot_name": "myfirstfreqai",
+    "initial_state": "running",
+    "force_entry_enable": false,
+    "internals": {
+        "process_throttle_secs": 5
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "127.0.0.1",
+        "listen_port": 8082,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "some-secret-key",
+        "ws_token": "some-ws-token",
+        "CORS_origins": [],
+        "username": "freqtrader",
+        "password": "123"
+    },
+    "freqai": {
+    "enabled": true,
+    "purge_old_models": true,
+    "train_period_days": 30,
+    "backtest_period_days": 7,
+    "identifier": "my-first-ai",
+    "feature_parameters": {
+        "include_timeframes": ["5m"],
+        "include_corr_pairlist": [],
+        "label_period_candles": 20,
+        "include_shifted_candles": 2,
+        "indicator_periods_candles": [20],
+        "include_handled_features": ["sma_20"],
+        "DI_threshold": 0,
+        "weight_factor": 0,
+        "indicator_max_period_candles": 200
+    },
+    "data_split_parameters": {
+        "test_size": 0.25
+    },
+    "model_training_parameters": {
+        "n_estimators": 100,
+        "learning_rate": 0.1,
+        "num_leaves": 31,
+        "random_state": 42
+    }
+    }
+}
