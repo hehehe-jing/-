@@ -37,8 +37,8 @@
   },
   "exchange": {
     "name": "binance",
-    "key": "2Jtu5b8XI40cikTZXDZxWjBhzKSYy1Qf9ZvltxVGgfAVi0GGWrJLGSG9mH5sCBjf",
-    "secret": "PPyLiMpXT9cA3htXvMIzRXxeifAlIb9pmKYQOggZ2cCpLVZ7r5r7vZI56DTXCydX",
+    "key": "*******************************************************",
+    "secret": "********************************************************",
     "ccxt_config": {
       "enableRateLimit": true,
       "httpsProxy": "http://127.0.0.1:7890"
@@ -103,8 +103,8 @@
     "listen_ip_address": "127.0.0.1",
     "listen_port": 8888,
     "verbosity": "error",
-    "jwt_secret_key": "42sEbGzxceMd7TrQomJgkf1KjtnS6vDAZiIq9aUhFYRHuwBO80PN3LClX5yVWp",
-    "ws_token": "KQ0v8jGlbYFahqZpdCRn3BAJ9z17DOwEHo2V5xPsIruLcSt4UiMf6yWgekXTm",
+    "jwt_secret_key": "***********************************************************",
+    "ws_token": "*************************************************************",
     "CORS_origins": [],
     "username": "freqtrader",
     "password": "123"
