@@ -107,7 +107,7 @@
     "ws_token": "*************************************************************",
     "CORS_origins": [],
     "username": "freqtrader",
-    "password": "123"
+    "password": "******"
   },
   "bot_name": "freqtrade",
   "initial_state": "running",
