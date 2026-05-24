@@ -70,7 +70,7 @@ class E0V1EN(IStrategy):
 
     # --- 企业微信 Webhook（替换为你自己的key）---
     def _send_wecom(self, content: str) -> None:
-        webhook_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=939cb90f-dd93-46d9-88fb-3fbdf4f57f75"
+        webhook_url = "**************************************************************************8"
         headers = {"Content-Type": "application/json"}
         data = {"msgtype": "markdown", "markdown": {"content": content}}
         try:
